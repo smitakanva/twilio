@@ -59,7 +59,7 @@ class AjaxController extends Controller
 
             // Set your Twilio Account SID and Auth Token
             $accountSid = 'ACfce17b569210699908ac8ccf4d44f004';
-            $authToken = '643451d0575d7bac14b8301f84f5a1a9';
+            $authToken = '459df25ba9004bfbe50744fa4d3dee11';
 
             // Initialize the Twilio client
             $twilio = new Client($accountSid, $authToken);
@@ -91,12 +91,10 @@ class AjaxController extends Controller
     }
 
     public function twowaycall(){
-                       
-               
-
+              
                 // Set your Twilio Account SID and Auth Token
                 $accountSid = 'ACfce17b569210699908ac8ccf4d44f004';
-                $authToken = '643451d0575d7bac14b8301f84f5a1a9';
+                $authToken = '459df25ba9004bfbe50744fa4d3dee11';
 
                 // Initialize the Twilio client
                 $twilio = new Client($accountSid, $authToken);
@@ -167,7 +165,7 @@ class AjaxController extends Controller
 
         // Your Twilio Account SID and Auth Token
         $accountSid = 'ACfce17b569210699908ac8ccf4d44f004';
-        $authToken = '643451d0575d7bac14b8301f84f5a1a9';
+        $authToken = '459df25ba9004bfbe50744fa4d3dee11';
 
 
         // Initialize Twilio
@@ -198,12 +196,12 @@ class AjaxController extends Controller
 
         // Your Twilio Account SID and Auth Token
         $accountSid = 'ACfce17b569210699908ac8ccf4d44f004';
-        $authToken = '643451d0575d7bac14b8301f84f5a1a9';
+        $authToken = '459df25ba9004bfbe50744fa4d3dee11';
 
 
         // Initialize Twilio
         $twilio = new Client($accountSid, $authToken);
-
+      
         // Recipient's phone number (to whom the call will be made)
         $recipientPhoneNumber = '+917719462335'; // Replace with the recipient's actual phone number
 
@@ -225,6 +223,8 @@ class AjaxController extends Controller
         } catch (Exception $e) {
             echo 'Error: ' . $e->getMessage();
         }
+        // echo "here";
+        // die;
         echo "Direct Call SID: " . $call->sid;
     }
 }
